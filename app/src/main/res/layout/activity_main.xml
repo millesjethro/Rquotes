@@ -10,14 +10,15 @@
         android:id="@+id/button2"
         android:layout_width="247dp"
         android:layout_height="60dp"
-        android:layout_marginTop="532dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#001AFF"
         android:text="GET RANDOM INSPIRATIONAL QUOTE"
         android:textColorHint="#000000"
         app:iconTint="#FA0000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/btnLoveQuote"
@@ -36,21 +37,48 @@
         android:id="@+id/button"
         android:layout_width="247dp"
         android:layout_height="59dp"
-        android:layout_marginTop="476dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#44FF00"
         android:text="GET RANDOM MOTIVATIONAL QUOTE"
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:iconTint="#FA0000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btnLoveQuote"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLoveQuote"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoveQuote" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="247dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="592dp" />
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="QUOTE OF THE DAY"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
