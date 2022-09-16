@@ -14,8 +14,24 @@ class QuoteRandomActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityGetRandomQuotesBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val intent = getIntent()
+
         var whatQuote = intent.getExtras()?.getString("Quotess");
         binding.textView3.text = whatQuote
+
+        binding.randomizer.setOnClickListener(this)
+
+        if(whatQuote == "Love"){
+            val lovequotess = loveqoutes.getQuote()
+            binding.textView3.text = lovequotess
+        }
+        else if(whatQuote == "Motivational"){
+            val lovequotess = motivationalquotes.getQuotes()
+            binding.textView3.text = lovequotess
+        }
+        else if(whatQuote == "Inspirational"){
+            val lovequotess = inspirationalquotes.getQuotess()
+            binding.textView3.text = lovequotess
+        }
 
     }
 
@@ -25,7 +41,16 @@ class QuoteRandomActivity : AppCompatActivity(), View.OnClickListener {
         when(p0!!.id){
             (R.id.randomizer)->{
                 if(whatQuote == "Love"){
-
+                    val lovequotess = loveqoutes.getQuote()
+                    binding.textView3.text = lovequotess
+                }
+                else if(whatQuote == "Motivational"){
+                    val lovequotess = motivationalquotes.getQuotes()
+                    binding.textView3.text = lovequotess
+                }
+                else if(whatQuote == "Inspirational"){
+                    val lovequotess = inspirationalquotes.getQuotess()
+                    binding.textView3.text = lovequotess
                 }
             }
         }
