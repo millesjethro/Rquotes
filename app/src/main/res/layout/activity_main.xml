@@ -8,11 +8,11 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="153dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="516dp"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="532dp"
         android:backgroundTint="#001AFF"
-        android:text="Button"
+        android:text="GET RANDOM INSPIRATIONAL QUOTE"
         android:textColorHint="#000000"
         app:iconTint="#FA0000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,12 +20,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="153dp"
-        android:layout_height="45dp"
+        android:id="@+id/btnLoveQuote"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
         android:layout_marginTop="428dp"
-        android:backgroundTint="#FFDE00"
-        android:text="LOVE "
+        android:backgroundTint="#FF0000"
+        android:text="GET RANDOM LOVE QUOTE"
         android:textColorHint="#000000"
         app:iconTint="#FA0000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,14 +34,23 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="153dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="472dp"
+        android:layout_width="247dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="476dp"
         android:backgroundTint="#44FF00"
-        android:text="Button"
+        android:text="GET RANDOM MOTIVATIONAL QUOTE"
+        android:textColor="#000000"
         android:textColorHint="#000000"
         app:iconTint="#FA0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="592dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
