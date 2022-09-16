@@ -7,7 +7,7 @@
     tools:context=".QuoteRandomActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnInspirational"
         android:layout_width="247dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -15,10 +15,10 @@
         android:text="GET RANDOM INSPIRATIONAL QUOTE"
         android:textColorHint="#000000"
         app:iconTint="#FA0000"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btnMotivational"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/btnMotivational"
+        app:layout_constraintTop_toBottomOf="@+id/btnMotivational" />
 
     <Button
         android:id="@+id/btnLoveQuote"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnMotivational"
         android:layout_width="247dp"
         android:layout_height="59dp"
         android:layout_marginTop="8dp"
@@ -49,15 +49,16 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLoveQuote" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnViewFav"
         android:layout_width="247dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
+        android:text="View Favorite Quote"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/btnInspirational"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toStartOf="@+id/btnInspirational"
+        app:layout_constraintTop_toBottomOf="@+id/btnInspirational" />
 
     <TextView
         android:id="@+id/textView"
@@ -76,9 +77,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="60dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
