@@ -46,7 +46,7 @@ class QuoteRandomActivity : AppCompatActivity(), View.OnClickListener {
     fun time(): String{
         val simpleDate = SimpleDateFormat("hh:mm:ss")
         val currentDate = simpleDate.format(Date())
-        var timedate = "\n Current Time is : $currentDate"
+        var timedate = "\n Timestamp : $currentDate"
         return timedate
     }
     override fun onClick(p0: View?) {
@@ -71,7 +71,8 @@ class QuoteRandomActivity : AppCompatActivity(), View.OnClickListener {
                 val editor = sharedPreferences.edit()
                 editor.putString(FAVQUOTE, binding.textView3.text.toString()+time())
                 editor.apply()
-                Toast.makeText(applicationContext, "Succesfully Added", Toast.LENGTH_SHORT).show()
+                var t = Toast.makeText(applicationContext, "Succesfully Added", Toast.LENGTH_SHORT)
+                t.show()
             }
         }
     }

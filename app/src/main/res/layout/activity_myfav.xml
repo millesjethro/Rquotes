@@ -23,11 +23,9 @@
         android:id="@+id/remfav"
         android:layout_width="377dp"
         android:layout_height="46dp"
-        android:layout_marginTop="312dp"
         android:backgroundTint="#FF0000"
         android:text="REMOVE FROM FAVORITE"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

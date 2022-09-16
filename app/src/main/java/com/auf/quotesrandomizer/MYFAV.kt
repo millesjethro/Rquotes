@@ -6,6 +6,7 @@ import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.auf.quotesrandomizer.databinding.ActivityGetRandomQuotesBinding
 import com.auf.quotesrandomizer.databinding.ActivityMyfavBinding
 
@@ -28,6 +29,9 @@ class MYFAV : AppCompatActivity(), View.OnClickListener{
         when(p0!!.id){
             (R.id.remfav)->{
                 sharedPreferences.edit().clear().apply()
+                var t = Toast.makeText(applicationContext, "Succesfully Deleted", Toast.LENGTH_SHORT)
+                t.show()
+                finish()
             }
         }
     }

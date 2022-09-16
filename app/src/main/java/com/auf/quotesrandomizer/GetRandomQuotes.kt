@@ -11,11 +11,12 @@ import com.auf.quotesrandomizer.databinding.ActivityMainBinding
 class GetRandomQuotes : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var sharedPreferences: SharedPreferences
+    private var favquotes = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        validateButton()
         sharedPreferences = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
 
         supportActionBar?.hide()
@@ -24,9 +25,20 @@ class GetRandomQuotes : AppCompatActivity(), View.OnClickListener {
         binding.btnInspirational.setOnClickListener(this)
         binding.btnMotivational.setOnClickListener(this)
         binding.btnViewFav.setOnClickListener(this)
-
+        favquotes = sharedPreferences.getString(FAVQUOTE, "").toString()
         val lovequotess = allquotes.getQuotesss()
         binding.textView2.text = lovequotess
+    }
+
+    override fun onStart() {
+        super.onStart()
+        favquotes = sharedPreferences.getString(FAVQUOTE, "").toString()
+        validateButton()
+    }
+
+    private fun validateButton() {
+
+        binding.btnViewFav.isEnabled = favquotes != ""
     }
 
     override fun onClick(p0: View?) {

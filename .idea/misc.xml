@@ -4,8 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/QuotesRandomizer/app/src/main/res/layout/activity_get_random_quotes.xml" value="0.22" />
-        <entry key="..\:/Android/QuotesRandomizer/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Android/QuotesRandomizer/app/src/main/res/layout/activity_myfav.xml" value="0.3484375" />
+        <entry key="..\:/Android/QuotesRandomizer/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Android/QuotesRandomizer/app/src/main/res/layout/activity_myfav.xml" value="0.22" />
       </map>
     </option>
   </component>
